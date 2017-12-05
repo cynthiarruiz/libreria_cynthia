@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+<title>Tempo |</title>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"></link>
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic'
+	rel='stylesheet' type='text/css'></link>
+<link rel="stylesheet" type="text/css" href="css/slick-team-slider.css"></link>
+<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+<!-- =======================================================
+    Theme Name: Tempo
+    Theme URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+	<!--HEADER START-->
+	<div class="main-navigation navbar-fixed-top">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#myNavbar">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Tempo</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#index.html">Home</a></li>
+						<li><a href="nosotros.html">Nosotros</a></li>
+						<li><a href="libros.html">Libros</a></li>
+						<li><a href="autores.html">Autores Recomendados </a></li>
+						<li><a href="sugerencias.html">Sugerencias</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!--HEADER END-->
+
+	<!--BANNER START-->
+	<div id="banner" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="jumbotron">
+					<h1 class="small">
+						Bienvenidos a <span class="bold">Tempo</span>
+					</h1>
+					<p class="big">Plataforma para compartir libros en comunidad de
+						autoria propia</p>
+					<a href="#" class="btn btn-banner">Lee Más<i class="fa fa-send"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--BANNER END-->
+
+	<!--CTA1 START-->
+	<div class="cta-1">
+		<div class="container">
+			<div class="row text-center white">
+				<h1 class="cta-title">Decile hola a Tempo!!</h1>
+				<p class="cta-sub-title">Si queres compartir tus autorias o
+					simplemente leer las creaciones de los demas.</p>
+			</div>
+		</div>
+	</div>
+	<!--CTA1 END-->
+
+	<!--SERVICE START-->
+	<div id="nosotros" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="page-title text-center">
+					<h1>Nuestro Servicio</h1>
+					<p>Creamos la plataforma para compartir al publico los libros
+						que personas escribieron y quisieron que las leas</p>
+					<hr class="pg-titl-bdr-btm"></hr>
+				</div>
+				<div class="col-md-4">
+					<div class="nosotros-box">
+						<div class="nosotros-icon">
+							<i class="fa fa-picture-o"></i>
+						</div>
+						<div class="nosotros-text">
+							<h3>Design</h3>
+							<p>doloremque laudantium, totam rem aperiam, eaque ipsa quae
+								ab illo inventore veritatis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="nosotros-box">
+						<div class="nosotros-icon">
+							<i class="fa fa fa-code"></i>
+						</div>
+						<div class="nosotros-text">
+							<h3>Development</h3>
+							<p>doloremque laudantium, totam rem aperiam, eaque ipsa quae
+								ab illo inventore veritatis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="nosotros-box">
+						<div class="nosotros-icon">
+							<i class="fa fa-diamond"></i>
+						</div>
+						<div class="nosotros-text">
+							<h3>Marketing</h3>
+							<p>doloremque laudantium, totam rem aperiam, eaque ipsa quae
+								ab illo inventore veritatis.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--SERVICE END-->
+	<div id="libros">
+		<div class="container">
+			<div class="page-title text-center">
+				<h1>Nuestros Libros</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor <br>incididunt ut labore et dolore magna
+					aliqua.</br>
+				</p>
+				<hr class="pg-titl-bdr-btm"></hr>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<ul id="libros-filter">
+						<li
+							data-filter=".filter-romance, .filter-policial, .filter-fantastico, .filter-terror"
+							class="filter-active">Todos</li>
+						<li data-filter=".filter-romance">Romance</li>
+						<li data-filter=".filter-policial">Policial</li>
+						<li data-filter=".filter-fantastico">Fantastico</li>
+						<li data-filter=".filter-terror">Terror</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row" id="libros-wrapper">
+				<div class="col-lg-3 col-md-6 libros-item filter-romance">
+					<a href=""> <img src="img/portfolio/app1.jpg" alt=""></img>
+						<div class="details">
+							<h4>App 1</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-terror">
+					<a href=""> <img src="img/portfolio/web2.jpg" alt=""></img>
+						<div class="details">
+							<h4>Web 2</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-romance">
+					<a href=""> <img src="img/portfolio/app3.jpg" alt=""></img>
+						<div class="details">
+							<h4>App 3</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-policial">
+					<a href=""> <img src="img/portfolio/card1.jpg" alt=""></img>
+						<div class="details">
+							<h4>Card 1</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-policial">
+					<a href=""> <img src="img/portfolio/card2.jpg" alt=""></img>
+						<div class="details">
+							<h4>Card 2</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-terror">
+					<a href=""> <img src="img/portfolio/web3.jpg" alt=""></img>
+						<div class="details">
+							<h4>Web 3</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-policial">
+					<a href=""> <img src="img/portfolio/card3.jpg" alt=""></img>
+						<div class="details">
+							<h4>Card 3</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-romance">
+					<a href=""> <img src="img/portfolio/app2.jpg" alt=""></img>
+						<div class="details">
+							<h4>App 2</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-fantasia">
+					<a href=""> <img src="img/portfolio/logo1.jpg" alt=""></img>
+						<div class="details">
+							<h4>Logo 1</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-fantasia">
+					<a href=""> <img src="img/portfolio/logo3.jpg" alt=""></img>
+						<div class="details">
+							<h4>Logo 3</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-terror">
+					<a href=""> <img src="img/portfolio/web1.jpg" alt=""></img>
+						<div class="details">
+							<h4>Web 1</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-6 libros-item filter-fantasia">
+					<a href=""> <img src="img/portfolio/logo2.jpg" alt=""></img>
+						<div class="details">
+							<h4>Logo 2</h4>
+							<span>Alored dono par</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--TEAM START-->
+	<div id="autores" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="page-title text-center">
+					<h1>Autores Recomendados</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor <br>incididunt ut labore et dolore magna
+						aliqua.</br>
+					</p>
+					<hr class="pg-titl-bdr-btm"></hr>
+				</div>
+				<div class="autoplay">
+					<div class="col-md-6">
+						<div class="team-info">
+							<div class="img-sec">
+								<img src="img/agent1.jpg" class="img-responsive"></img>
+							</div>
+							<div class="fig-caption">
+								<h3>Haris Brown</h3>
+								<p class="marb-20">Sr. UI Designer</p>
+								<p>Follow me:</p>
+								<ul class="team-social">
+									<li class="bgblue-dark"><a href="#"><i
+											class="fa fa-facebook"></i></a></li>
+									<li class="bgred"><a href="#"><i
+											class="fa fa-google-plus"></i></a></li>
+									<li class="bgblue-light"><a href="#"><i
+											class="fa fa-twitter"></i></a></li>
+									<li class="bgblue-dark"><a href="#"><i
+											class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="team-info">
+							<div class="img-sec">
+								<img src="img/agent2.jpg" class="img-responsive"></img>
+							</div>
+							<div class="fig-caption">
+								<h3>Emmy Brown</h3>
+								<p class="marb-20">Jr. UI Designer</p>
+								<p>Follow me:</p>
+								<ul class="team-social">
+									<li class="blue-dark"><a href="#"><i
+											class="fa fa-facebook"></i></a></li>
+									<li class="red"><a href="#"><i
+											class="fa fa-google-plus"></i></a></li>
+									<li class="blue-light"><a href="#"><i
+											class="fa fa-twitter"></i></a></li>
+									<li class="blue-dark"><a href="#"><i
+											class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="team-info">
+							<div class="img-sec">
+								<img src="img/agent3.jpg" class="img-responsive"></img>
+							</div>
+							<div class="fig-caption">
+								<h3>Iain Dante</h3>
+								<p class="marb-20">Jr. UI Designer</p>
+								<p>Follow me:</p>
+								<ul class="team-social">
+									<li class="blue-dark"><a href="#"><i
+											class="fa fa-facebook"></i></a></li>
+									<li class="red"><a href="#"><i
+											class="fa fa-google-plus"></i></a></li>
+									<li class="blue-light"><a href="#"><i
+											class="fa fa-twitter"></i></a></li>
+									<li class="blue-dark"><a href="#"><i
+											class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="team-info">
+							<div class="img-sec">
+								<img src="img/agent4.jpg" class="img-responsive"></img>
+							</div>
+							<div class="fig-caption">
+								<h3>Kate Haris</h3>
+								<p class="marb-20">Jr. UI Designer</p>
+								<p>Follow me:</p>
+								<ul class="team-social">
+									<li class="blue-dark"><a href="#"><i
+											class="fa fa-facebook"></i></a></li>
+									<li class="red"><a href="#"><i
+											class="fa fa-google-plus"></i></a></li>
+									<li class="blue-light"><a href="#"><i
+											class="fa fa-twitter"></i></a></li>
+									<li class="blue-dark"><a href="#"><i
+											class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--TEAM END-->
+
+	<!--CTA2 START-->
+	<div class="cta2">
+		<div class="container">
+			<div class="row white text-center">
+				<h3 class="wd75 fnt-24">“Every Thing is designed. Few Things
+					are Designed well.” - Brian Reed</h3>
+				<p class="cta-sub-title"></p>
+				<a href="#" class="btn btn-default">Request A Quote</a>
+			</div>
+		</div>
+	</div>
+	<!--CTA2 END-->
+
+	<!--CONTACT START-->
+	<div id="sugerencias" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="page-title text-center">
+					<h1>Contacto Rapido</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor <br>incididunt ut labore et dolore magna
+						aliqua.</br>
+					</p>
+					<hr class="pg-titl-bdr-btm"></hr>
+				</div>
+				<div id="enviarmensaje">Tu mensaje ha sido enviado, Gracias!</div>
+				<div id="errormensaje"></div>
+
+				<div class="form-sec">
+					<form action="" method="post" role="form" class="contactForm">
+						<div class="col-md-4 form-group">
+							<input type="text" name="name"
+								class="form-control text-field-box" id="nombre"
+								placeholder="Tu nombre" data-rule="minlen:4"
+								data-msg="Porfavor ingrese al menos 4 caracteres" />
+							<div class="validation"></div>
+						</div>
+						<div class="col-md-4 form-group">
+							<input type="email" class="form-control text-field-box"
+								name="email" id="email" placeholder="Tu Email" data-rule="email"
+								data-msg="Porfavor ingrese un Email valido" />
+							<div class="validation"></div>
+						</div>
+						<div class="col-md-4 form-group">
+							<input type="text" class="form-control text-field-box"
+								name="subject" id="asunto" placeholder="Asunto"
+								data-rule="minlen:4"
+								data-msg="Por favor ingrese al menos 8 caracteres como asunto" />
+							<div class="validation"></div>
+						</div>
+						<div class="col-md-12 form-group">
+							<textarea class="form-control text-field-box" name="message"
+								rows="5" data-rule="required"
+								data-msg="Porfavor escribenos algo" placeholder="Mensaje"></textarea>
+							<div class="validation"></div>
+
+							<button class="button-medium" id="contact-submit" type="submit"
+								name="contact">Enviar ahora</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--CONTACT END-->
+
+	<!--FOOTER START-->
+	<footer class="footer section-padding">
+		<div class="container">
+			<div class="row">
+				<div style="visibility: visible; animation-name: zoomIn;"
+					class="col-sm-12 text-center wow zoomIn">
+					<h3>Follow us on</h3>
+					<div class="footer_social">
+						<ul>
+							<li><a class="f_facebook" href="#"><i
+									class="fa fa-facebook"></i></a></li>
+							<li><a class="f_twitter" href="#"><i
+									class="fa fa-twitter"></i></a></li>
+							<li><a class="f_google" href="#"><i
+									class="fa fa-google-plus"></i></a></li>
+							<li><a class="f_linkedin" href="#"><i
+									class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!--- END COL -->
+			</div>
+			<!--- END ROW -->
+		</div>
+		<!--- END CONTAINER -->
+	</footer>
+	<!--FOOTER END-->
+	<div class="footer-bottom">
+		<div class="container">
+			<div style="visibility: visible; animation-name: zoomIn;"
+				class="col-md-12 text-center wow zoomIn">
+				<div class="footer_copyright">
+					<p>© Copyright, All Rights Reserved.</p>
+					<div class="credits">
+						<!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Tempo
+            -->
+						Designed by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>

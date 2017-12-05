@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="index">
+<div  layout:fragment="contenido">      
+<!--CONTACT START-->
+  <div id="sugerencias" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="page-title text-center">
+          <h1>Contacto Rapido</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua.</br> </p>
+          <hr class="pg-titl-bdr-btm"></hr>
+        </div>
+        <div id="enviarmensaje">Tu mensaje ha sido enviado, Gracias!</div>
+        <div id="errormensaje"></div>
+		
+        <div class="form-sec">
+		<p th:text="${mensajeError}"></p>
+          <form action="/graciasSugerencias" method="POST" role="form" class="contactForm">
+            <div class="col-md-4 form-group">
+              <input type="text" name="nombre" class="form-control text-field-box" id="nombre" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Porfavor ingrese al menos 4 caracteres" />
+              <div class="validation"></div>
+            </div>
+            <div class="col-md-4 form-group">
+              <input type="email" class="form-control text-field-box" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Porfavor ingrese un Email valido" />
+              <div class="validation"></div>
+            </div>
+            <div class="col-md-4 form-group">
+              <input type="text" class="form-control text-field-box" name="asunto" id="asunto" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingrese al menos 8 caracteres como asunto" />
+              <div class="validation"></div>
+            </div>
+            <div class="col-md-12 form-group">
+              <textarea class="form-control text-field-box" name="mensaje" rows="5" data-rule="required" data-msg="Porfavor escribenos algo" placeholder="Mensaje"></textarea>
+              <div class="validation"></div>
+
+              <button class="button-medium" id="contact-submit" type="submit" name="enviar" >Enviar ahora</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--CONTACT END-->
+</div>
+</html>
+			

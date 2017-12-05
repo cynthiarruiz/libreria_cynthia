@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+
+<div layout:fragment="contenido">
+	<div class="row">
+		<div th:each="libro : ${listaLibros}">
+			<a th:text="${libro.titulo}"></a> <a th:text="${libro.titulo}"></a> <a
+				th:text="${libro.titulo}"></a>
+
+		</div>
+	</div>
+
+</div>
+</html>

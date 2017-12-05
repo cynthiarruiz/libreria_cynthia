@@ -1,0 +1,37 @@
+body {
+	background: #9cd2e2;
+	color: #000000;
+	font-family: 'Lateef', cursive;
+	font-sixe: 20px;
+}
+
+.jumbotron {
+	background-color: #9cd2e2;
+	background-image: url(helado.jpg);
+	background-size: cover;
+}
+
+#barranavegacion {
+	text-decoration-color: #510000;
+}
+
+.col-4 {
+	background-color: #9cd2e2;
+}
+
+.barranavegacion {
+	text-decoration-color: black;
+	text-size-adjust: inherit;
+}
+
+.nav-link {
+	color: #ff8298;
+}
+
+.col-8 {
+	font-size: 20px;
+}
+
+.item-sabor {
+	display: block;
+}
